@@ -1,0 +1,97 @@
+/* Default styles for media screen 1200px */
+
+/* html tag use to determine font and background for the webpage */ 
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right bottom, #ff0505, #fc1924e1, #d60505, #d41717, #af0202, #af1313);
+    height: auto;
+    min-height: 100%;
+    color:white;
+}
+
+/* header tag use to determine padding size for the header */
+header {
+    padding: 1em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+/* h1 tag use to determine font size and text aling */
+h1 h2 a {
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+    color:white
+}
+
+/* logo id to style logo in the pages */
+#logo-icon {
+    width: 30%;
+    max-width: 240px;
+    height: inherit;
+    padding: 1em;
+}
+
+/* text id use to determine style for the text div in index page as font size, position and text align */
+#text-rules {
+    text-align: justify;
+    padding: 1em;
+    justify-content: center;
+    font-size: large;
+}
+
+/* button tag use to determine style for the buttons in the site as color, size and others */
+button, a.button {
+    padding: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:2em;
+}
+
+/* footer tag use to determine style for the footer with padding size and text align */
+footer {
+    padding: 1em;
+    text-align: center;
+}
+
+/* f-icon class use to determine style for social media icons in the footer */
+.footer-icon {
+    padding: 1em;
+    width: 40px;
+    color: black;
+    height: inherit;
+}
+
+/* center class use to determine text aling and padding size for some divs */
+.center-div {
+    text-align: center;
+    padding: 1em;
+}
+
+/* Styles for media scren above 1400px */
+@media screen and (min-width: 1400px) {
+    /* center class use to determine text aling and padding size for some divs */
+.center-div {
+    text-align: center;
+    padding: 1em;
+}
+
+#text-rules {
+    text-align: justify;
+    padding: 1em;
+    padding-left: 20em;
+    justify-content: center;
+    font-size: large;
+}
+
+}
