@@ -1,108 +1,233 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Site Logo](assets/images/flags-portugal-and-brazil-on-a-white-background.png)
+## Table of Contents
+* [Purpose](#Purpose)
+* [Features](#Features)
+    * [Existing](#Existing)
+        * [The Header Image](#The-Header-Image)
+        * [Main Section](#Main-Section)
+        * [Footer](#Footer)
+        * [Quiz](#Quiz)
+        * [Score](#Score)
+    * [Left to Implement](#Left-to-Implement)
+* [Technologies](#Technologies)
+* [User Experience Design (UX)](#User-Experience-Design)
+    * [Structure](#Structure)
+    * [Business Goals](#Business-Goals)
+    * [User Goals](#User-Goals)
+        * [First Time Visitor](#First-Time-Visitor)
+        * [Returning Visitor](#Returning-Visitor)
+        * [Frequent User](#Frequent-User)
+    * [Design](#Design)
+        * [Colour Scheme](#Colour-Scheme)
+        * [Typography](#Typography)
+        * [Wireframes](#Wireframes)
+* [Limitations](#Limitations)
+* [Testing](#Testing)
+    * [Test Results](#Test-Results)
+        * [Validators](#Validators)
+        * [Lighthouse](#Lighthouse)
+        * [Devices](#Devices)
+    * [Testing Issues](#Testing-Issues)
+* [Deployment](#Deployment)
+    * [Project Creation](#Project-Creation)
+    * [GitHub Pages](#Github-Pages)
+    * [Locally](Locally)
+    * [Commands](Commands)
+* [Credits](#Credits)
+    * [Content](#Content)
+    * [Media](#Media)
+    * [Acknowledgements](#Acknowledgements)
+* [Comments](#Comments)
 
-Welcome baptistapaulo,
+## Purpose
+The idea behind this site was to bring some knowledge about the Portuguese and Brazilian gastronomy. There are a lot of sites with massive information regarding culture and food from both countries but on this one, the focus is to centralize and put together some of the most common and representative products.
+The portfolio of recipes will provide some basic information about each product and then, if the user wants to get additional information, should contact us by filling the form. 
+This site was built with basic functionality and navigation but soon, more advanced features will be deployed such as online orders, request of recipes, requests for further information regarding specific locations (travelling, hotels) and feedback from users (blog). 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The live website can be found [here](https://baptistapaulo.github.io/pp2/).
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+[Table-of-Contents](#Table-of-Contents)
 
-## Gitpod Reminders
+## Features
+### Existing
+#### The-Header-Image
+![Header-Image]()
+#### Main-Section
+![main-section-part1]()
+![main-section-part2]()
+#### Footer
+![Footer]()
+#### Quiz
+![Quiz]()
+#### Score
+![Score]()
+### Left-to-Implement
+* Orders online for delivery of some selected products from the portfolio but this will require a secure link for payments and security compliance.
+* A blog also may be created but only accessible to members, requiring therefore a registration and sign in.
+* A database with multiple recipes may be deployed as a back-end engine to provide a feed of different products, so that every month for example, the front end can swift some of the recipes based on a voting scheme from members.
+* Gallery images with the recipe attached underneath and/or text over the photo on mouse click (hover effect).
+* Video and/or music clips to ilustrate some of the cultural aspects of both countries.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+[Table-of-Contents](#Table-of-Contents)
 
-`python3 -m http.server`
+## Technologies
+* Languages
+    * HTML5
+    * CSS3
+    * JavaScript
+* Frameworks, Libraries and Programs
+    * Google fonts
+    * Font Awesome
+    * GitHub (used to store repositories, files and images pushed from GitPod)
+    * GitPod (IDE used to code the website)
+    * Git (for version control, commits and push to GitHub)
+    * Google Chrome Developer Tools (for checking compatibility, troubleshooting and editing code)
+    * TinyPNG (for compression of your WEBP, JPEG and PNG files) [here](https://tinypng.com/).
+    * Stackoverflow (for searching on some topics related to HTML/CSS)
+    * W3schools (for HTML/CSS tutorials)
+    * DOM ()
+    * 
+    * 
 
-A blue button should appear to click: _Make Public_,
+[Table-of-Contents](#Table-of-Contents)
 
-Another blue button should appear to click: _Open Browser_.
+## User-Experience-Design
+The UX was deployed and tested only for different screen sizes.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Structure
+![Structure]()
+[Table-of-Contents](#Table-of-Contents)
 
-A blue button should appear to click: _Make Public_,
+### Business-Goals
+* Provide a game for entertainment.
+* Allow users to test their knowledge about artists.
+* Create a ranking of users based on score to promote competition.
+* Increase quiz DB with levels of difficulty for the pool of questions.
+### User-Goals
+#### First-Time-Visitor
+* Easy navigation and search for information.
+* Site should be visually appealing.
+#### Returning-Visitor
+* Curiosity about questions.
+* Testing knowledge.
+#### Frequent-User
+* Challenge with new pool of questions.
+* Get better score.
+### Design
+#### Colour-Scheme
+* Predominant colours across all site are red and yellow.
+* Black and white ocasionaly.
+* Custom rgb(184,184,184) for headers.
+#### Typography
+**Arial** (Helvetica, sans-serif) was used mostly for any other text in all sections, including the menu and form.
+#### Wireframes
+![wireframe-home]()
+![wireframe-quiz]()
+![wireframe-score]()
 
-Another blue button should appear to click: _Open Browser_.
+[Table-of-Contents](#Table-of-Contents)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Limitations
+This website has .
+![limitations]()
 
-To log into the Heroku toolbelt CLI:
+[Table-of-Contents](#Table-of-Contents)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Testing
+### Test-Results
+#### Validators
+* HTML - Official W3C validator [here](https://validator.w3.org/).
+* CSS - Official (Jigsaw) validator [here](https://jigsaw.w3.org/css-validator/).
+* JSHint - Official (JSHint) validator [here](https://jshint.com/).
+* WAVE - Web Accessibility Evaluation Tool [here](https://wave.webaim.org/).
+* Lighthouse – Developer Tools
+* Chrome – Developer Tools
+* Am I Responsive [here](https://ui.dev/amiresponsive).
+![responsive]()
+#### Lighthouse
+![lighthouse-index-results-performance]()
+![lighthouse-quiz-results-performance]()
+![lighthouse-score-results-performance]()
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### Devices
+Tested functionality and responsiveness using the below devices and browsers.
+* Mobiles
+    * Samsung S9
+    * Samsung Note
+    * Samsung A51
+* Laptops
+    * HP EliteBook
+    * Lenovo ThinkPad
+* Browsers
+    * Chrome
+    * Firefox
+    * Edge
 
-------
+### Testing-Issues
+* Bugs identified that need to be fixed.
+    * <empty>.
+    * <empty>.
+    * <empty>.
+    * <empty>.
+* <empty>.
 
-## Release History
+[Table-of-Contents](#Table-of-Contents)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Deployment
+### Project-Creation
+This project website was created from scratch, with no forking from any other repositories but based on the initial structure of the Code Institute walkthrough.
+Once the structure was in place, then added content and styling as the work was in progress. Some styling was gathered from **Stackoverflow** or **W3schools**.
+#### Github-Pages
+Repository
+1. Navigate to the GitHub [Repository:](https://github.com/baptistapaulo/pp1)
+1. Click the 'Settings' Tab.
+1. Scroll Down to the Git Hub Pages Heading.
+1. Select 'Master Branch' as the source.
+1. Click the Save button.
+1. Click on the link to go to the live deployed page.
+### Locally
+Clone
+1. Navigate to the GitHub [Repository:](https://github.com/baptistapaulo/pp1)
+1. Click the Code drop down menu.
+1. Either Download the ZIP file, unpackage locally and open with IDE (This route ends here) OR Copy Git URL from the HTTPS dialogue box.
+1. Open your developement editor of choice and open a terminal window in a directory of your choice.
+1. Use the 'git clone' command in terminal followed by the copied git URL.
+1. A clone of the project will be created locally on your machine.
+### Fork
+Most commonly, forks are used to either propose changes to someone else's project to which you do not have write access, or to use someone else's project as a starting point for your own idea. You can fork a repository to create a copy of the repository and make changes without affecting the upstream repository.
+So a fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+1. Navigate to the GitHub Repository you want to fork.
+1. On the top right of the page under the header, click the fork button.
+1. Create a new fork.
+1. This will create a duplicate of the full project in your GitHub Repository.
+### Commands
+* `CTRL + S` was used to save the page.
+* `CTRL + Z` was used to undo a change.
+* `python3 -m http.server` was used to view and test site before pushing live.
+* `git add` was used to add pages to the stage area.
+* `git commit -m "fix: message here"` was used to comit them them to github and provide a relevant message to the changes that had been made.
+* `git push` was used to push the changes upto Github for public viewing.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+[Table-of-Contents](#Table-of-Contents)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Credits
+### Content
+* [Code Institute](https://codeinstitute.net/ie/) course material, mainly the "Love Maths" Walkthrough.
+* [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn)
+* Code ideas were gathered from **Chris Williams** GitHub repositories.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Media
+* The photos used in this website were taken from some resources such as the below.
+    * [Pexels](https://www.pexels.com/) - used for images
+    * [Unsplash](https://unsplash.com/) - used for images
+    * [Google](https://www.google.com/)- used for images
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Acknowledgements
+* Huge thank you to my mentor **Ronan McClelland** for his guidance throughout my project.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+[Table-of-Contents](#Table-of-Contents)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Comments
+*<empty>
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+[Table-of-Contents](#Table-of-Contents)
