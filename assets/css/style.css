@@ -1,6 +1,6 @@
-/* Default styles for media screen 1200px */
+/* Default styles for media screen below 1400px */
 
-/* html tag use to determine font and background for the webpage */ 
+/* html tag used to define font and background for webpage */ 
 html {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-image: linear-gradient(to right bottom, #ff0505, #fc1924e1, #d60505, #d41717, #af0202, #af1313);
@@ -9,7 +9,7 @@ html {
     color:white;
 }
 
-/* header tag use to determine padding size for the header */
+/* header tag used to define padding size for header */
 header {
     padding: 1em;
     padding: 1em;
@@ -17,7 +17,7 @@ header {
     justify-content: center;
 }
 
-/* h1 tag use to determine font size and text aling */
+/* h1 h2 a tags used to define font size and text alignment */
 h1 h2 a {
     font-size: 2em;
     text-align: center;
@@ -25,7 +25,7 @@ h1 h2 a {
     color:white
 }
 
-/* logo id to style logo in the pages */
+/* logo-icon id to define style logo image in all pages */
 #logo-icon {
     width: 30%;
     max-width: 240px;
@@ -33,7 +33,7 @@ h1 h2 a {
     padding: 1em;
 }
 
-/* text id use to determine style for the text div in index page as font size, position and text align */
+/* text-rules id used to define style for text in some div of all pages such as font size, position and text alignment */
 #text-rules {
     text-align: justify;
     padding: 1em;
@@ -41,7 +41,7 @@ h1 h2 a {
     font-size: large;
 }
 
-/* button tag use to determine style for the buttons in the site as color, size and others */
+/* button tag used to define style of buttons in all pages such as the color, size and others */
 button, a.button {
     padding: 16px;
     padding-left: 50px;
@@ -58,13 +58,13 @@ button, a.button {
     margin:2em;
 }
 
-/* footer tag use to determine style for the footer with padding size and text align */
+/* footer tag used to define style of the footer with padding size and text alignment */
 footer {
     padding: 1em;
     text-align: center;
 }
 
-/* f-icon class use to determine style for social media icons in the footer */
+/* footer-icon class used to define style for social media icons in the footer */
 .footer-icon {
     padding: 1em;
     width: 40px;
@@ -72,7 +72,7 @@ footer {
     height: inherit;
 }
 
-/* center class use to determine text aling and padding size for some divs */
+/* center-div class used to define text alingment and padding size for some divs */
 .center-div {
     text-align: center;
     padding: 1em;
@@ -80,12 +80,13 @@ footer {
 
 /* Styles for media scren above 1400px */
 @media screen and (min-width: 1400px) {
-    /* center class use to determine text aling and padding size for some divs */
+/* center-div class use to define text aling and padding size for some divs */
 .center-div {
     text-align: center;
     padding: 1em;
 }
 
+/* text-rules id used to define style for text in some div of all pages such as font size, position and text alignment */
 #text-rules {
     text-align: justify;
     padding: 1em;
