@@ -78,6 +78,29 @@ footer {
     padding: 1em;
 }
 
+.box-image {
+    width: 20vw;
+    height: 12vw;
+    padding: 1em;
+    margin: 1em;
+    margin-bottom: 0;
+}
+
+.box-text {
+    border-radius: 10px;
+    background-color: purple;
+}
+
+.parent {
+    padding: 1rem 1rem;
+    text-align: center;
+  }
+  .child {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+  }
+
 /* Styles for media scren above 1400px */
 @media screen and (min-width: 1400px) {
 /* center-div class use to define text aling and padding size for some divs */
