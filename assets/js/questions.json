@@ -1,0 +1,360 @@
+[
+ {
+   "sequence": "1",
+   "type": "movie",
+   "question": "Gone with the wind",
+   "option1": "Scarlet O'Hara",
+   "option2": "",
+   "option3": "",
+   "answer": "option1"
+ },
+ {
+   "sequence": "2",
+   "type": "movie",
+   "question": "Star Wars",
+   "option1": "",
+   "option2": "Ioda",
+   "option3": "",
+   "answer": "option2"
+ },
+ {
+   "sequence": "3",
+   "type": "movie",
+   "question": "Star Treck",
+   "option1": "",
+   "option2": "",
+   "option3": "Spock",
+   "answer": "option3"
+ },
+ {
+   "sequence": "4",
+   "type": "movie",
+   "question": "Matrix",
+   "option1": "",
+   "option2": "",
+   "option3": "Neo",
+   "answer": "option3"
+ },
+ {
+   "sequence": "5",
+   "type": "movie",
+   "question": "Friday Thirteen",
+   "option1": "Jason",
+   "option2": "",
+   "option3": "",
+   "answer": "option1"
+ },
+ {
+   "sequence": "6",
+   "type": "movie",
+   "question": "Zombieland",
+   "option1": "",
+   "option2": "Woody Harrison",
+   "option3": "",
+   "answer": "optio2n"
+ },
+ {
+   "sequence": "7",
+   "type": "movie",
+   "question": "Ferrie Bueller's",
+   "option1": "",
+   "option2": "",
+   "option3": "Mathew Brotherck",
+   "answer": "option3"
+ },
+ {
+   "sequence": "8",
+   "type": "movie",
+   "question": "Taken",
+   "option1": "Lian Nielsen",
+   "option2": "",
+   "option3": "",
+   "answer": "option1"
+ },
+ {
+   "sequence": "9",
+   "type": "movie",
+   "question": "Halloween",
+   "option1": "",
+   "option2": "Janie Lee Curtis",
+   "option3": "",
+   "answer": "option2"
+ },
+ {
+   "sequence": "10",
+   "type": "movie",
+   "question": "Indiana Jones",
+   "option1": "",
+   "option2": "",
+   "option3": "Harrison Ford",
+   "answer": "option3"
+ },
+ {
+   "sequence": "11",
+   "type": "song",
+   "question": "Always on my mind",
+   "option1": "Elvis Presley",
+   "option2": "",
+   "option3": "",
+   "answer": "option1"
+ },
+ {
+   "sequence": "12",
+   "type": "song",
+   "question": "I always love you",
+   "option1": "",
+   "option2": "Whitney Houston",
+   "option3": "",
+   "answer": "option2"
+ },
+ {
+   "sequence": "13",
+   "type": "song",
+   "question": "Sign of the times",
+   "option1": "",
+   "option2": "",
+   "option3": "Harry style",
+   "answer": "option3"
+ },
+   "sequence": "14",
+   "type": "song",
+   "question": "Bad Guy",
+   "option1": "Billie Eilish",
+   "option2": "",
+   "option3": "",
+   "answer": "option1"
+ },
+ {
+   "sequence": "15",
+   "type": "song",
+   "question": "Nessum Dorma",
+   "option1": "",
+   "option2": "Luciano Pavaroti",
+   "option3": "",
+   "answer": "option2"
+ },
+ {
+   "sequence": "16",
+   "type": "song",
+   "question": "Anna",
+   "option1": "",
+   "option2": "",
+   "option3": "Beatles",
+   "answer": "option3"
+ },
+ {
+   "sequence": "17",
+   "type": "song",
+   "question": "Sorrow",
+   "option1": "David Bowie",
+   "option2": "",
+   "option3": "",
+   "answer": "option1"
+ },
+ {
+   "sequence": "18",
+   "type": "song",
+   "question": "Wake Up",
+   "option1": "",
+   "option2": "Arcade Fire",
+   "option3": "",
+   "answer": "option2"
+ },
+ {
+   "sequence": "19",
+   "type": "song",
+   "question": "Stormy Weather",
+   "option1": "",
+   "option2": "",
+   "option3": "Etta James",
+   "answer": "option3"
+ },
+ {
+   "sequence": "20",
+   "type": "song",
+   "question": "Watch under the bridge",
+   "option1": "Adele",
+   "option2": "",
+   "option3": "",
+   "answer": "option1"
+ },
+ {
+   "sequence": "21",
+   "type": "movie",
+   "question": "Gone with the wind",
+   "option1": "1942",
+   "option2": "1943",
+   "option3": "1945",
+   "answer": "option1"
+ },
+ {
+   "sequence": "22",
+   "type": "movie",
+   "question": "Star Wars",
+   "option1": "1976",
+   "option2": "1977",
+   "option3": "1978",
+   "answer": "option2"
+ },
+ {
+   "sequence": "23",
+   "type": "movie",
+   "question": "Star Treck",
+   "option1": "1967",
+   "option2": "1965",
+   "option3": "1966",
+   "answer": "option3"
+ },
+ {
+   "sequence": "24",
+   "type": "movie",
+   "question": "Matrix",
+   "option1": "2001",
+   "option2": "2000",
+   "option3": "1999",
+   "answer": "option3"
+ },
+ {
+   "sequence": "25",
+   "type": "movie",
+   "question": "Friday Thirteen",
+   "option1": "1980",
+   "option2": "1981",
+   "option3": "1985",
+   "answer": "option1"
+ },
+ {
+   "sequence": "26",
+   "type": "movie",
+   "question": "Zombieland",
+   "option1": "2005",
+   "option2": "2009",
+   "option3": "2011",
+   "answer": "option2"
+ },
+ {
+   "sequence": "27",
+   "type": "movie",
+   "question": "Ferrie Bueller's",
+   "option1": "1981",
+   "option2": "1987",
+   "option3": "1986",
+   "answer": "option3"
+ },
+ {
+   "sequence": "28",
+   "type": "movie",
+   "question": "Taken",
+   "option1": "2008",
+   "option2": "2007",
+   "option3": "2005",
+   "answer": "option1"
+ },
+ {
+   "sequence": "29",
+   "type": "movie",
+   "question": "Halloween",
+   "option1": "1977",
+   "option2": "1978",
+   "option3": "1980",
+   "answer": "option2"
+ },
+ {
+   "sequence": "30",
+   "type": "movie",
+   "question": "Indiana Jones",
+   "option1": "1985",
+   "option2": "1982",
+   "option3": "1981",
+   "answer": "option3"
+ },
+ {
+   "sequence": "31",
+   "type": "song",
+   "question": "Always on my mind",
+   "option1": "1973",
+   "option2": "1974",
+   "option3": "1977",
+   "answer": "option1"
+ },
+ {
+   "sequence": "32",
+   "type": "song",
+   "question": "I always love you",
+   "option1": "1971",
+   "option2": "1974",
+   "option3": "1975",
+   "answer": "option2"
+ },
+ {
+   "sequence": "33",
+   "type": "song",
+   "question": "Sign of the times",
+   "option1": "1997",
+   "option2": "1991",
+   "option3": "1987",
+   "answer": "option3"
+ },
+   "sequence": "34",
+   "type": "song",
+   "question": "Bad Guy",
+   "option1": "2019",
+   "option2": "2009",
+   "option3": "2015",
+   "answer": "option1"
+ },
+ {
+   "sequence": "35",
+   "type": "song",
+   "question": "Nessum Dorma",
+   "option1": "1985",
+   "option2": "1986",
+   "option3": "1989",
+   "answer": "option2"
+ },
+ {
+   "sequence": "36",
+   "type": "song",
+   "question": "Anna",
+   "option1": "1973",
+   "option2": "1961",
+   "option3": "1963",
+   "answer": "option3"
+ },
+ {
+   "sequence": "37",
+   "type": "song",
+   "question": "Sorrow",
+   "option1": "1973",
+   "option2": "1971",
+   "option3": "1963",
+   "answer": "option1"
+ },
+ {
+   "sequence": "38",
+   "type": "song",
+   "question": "Wake Up",
+   "option1": "2000",
+   "option2": "2005",
+   "option3": "2004",
+   "answer": "option2"
+ },
+ {
+   "sequence": "39",
+   "type": "song",
+   "question": "Stormy Weather",
+   "option1": "1933",
+   "option2": "1963",
+   "option3": "1960",
+   "answer": "option3"
+ },
+ {
+   "sequence": "40",
+   "type": "song",
+   "question": "Watch under the bridge",
+   "option1": "2015",
+   "option2": "2017",
+   "option3": "2005",
+   "answer": "option1"
+ },
+]
