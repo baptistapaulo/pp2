@@ -82,6 +82,7 @@ footer {
     width: 20vw;
     height: 12vw;
     padding: 1em;
+    border-radius: 40px;
     margin: 1em;
     margin-bottom: 0;
 }
