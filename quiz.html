@@ -18,25 +18,25 @@
         <div class="center-div">
             <h2 id="timer"></h2>
         </div>
-
-        <div class="center-div">
-            <h1 id="text-question">The question is:</h1>
-        </div>
-        <div class="parent">
-            <div class="child">
-                <img class="box-image" id="image-question" src="./assets/images/Q1.PNG" alt="Quiz question image">
+            <div class="flex, center-div">
+                <h2 class="field" id="question">Question</h2>
             </div>
-            <div class="child" id="pool-answers-question">
-                    <div id="pool-answer1-question">
-                        answer 1
+            
+            <div class="parent">
+                <div class="child">
+                    <img class="box-image" id="image-question" src="./assets/images/Q1.PNG" alt="Quiz question image">
+                </div>
+                <div class="child" id="pool-answers-question">
+                    <div class="flex">
+                        <button2 id="answerA" onclick="answerA_clicked()"></button2>
                     </div>
-                    <div id="pool-answer2-question">
-                        answer 2
+                    <div class="flex">
+                        <button2 id="answerB" onclick="answerB_clicked()"></button2>
                     </div>
-                    <div id="pool-answer3-question">
-                        answer 3
+                    <div class="flex">
+                        <button2 id="answerC" onclick="answerC_clicked()"></button2>
                     </div>
-            </div>
+                </div>
         </div>
         <div class="center-div">
             <button data-type="end">Quit</button>

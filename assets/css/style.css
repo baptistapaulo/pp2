@@ -102,6 +102,31 @@ footer {
     vertical-align: middle;
   }
 
+.flex { display:flex;}
+
+.field {
+  min-width: 200px;
+  min-height: 30px;
+  margin: 10px;
+}
+
+button2 {
+    height: 40px;
+    width: 200px;
+    padding: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    margin: 10px;
+  background: white;
+  color: black;
+}
+
+button2:active {
+  background: black;
+  color: white;
+}
+
 /* Styles for media scren above 1400px */
 @media screen and (min-width: 1400px) {
 /* center-div class use to define text aling and padding size for some divs */
