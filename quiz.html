@@ -26,18 +26,29 @@
                 <div class="child">
                     <img class="box-image" id="image-question" src="./assets/images/Q1.PNG" alt="Quiz question image">
                 </div>
-                <div class="child" id="pool-answers-question">
-                    <div class="flex">
-                        <button2 id="answerA" onclick="answerA_clicked()"></button2>
-                    </div>
-                    <div class="flex">
-                        <button2 id="answerB" onclick="answerB_clicked()"></button2>
-                    </div>
-                    <div class="flex">
-                        <button2 id="answerC" onclick="answerC_clicked()"></button2>
-                    </div>
-                </div>
-        </div>
+                <div class="flex">
+                    <div class="field">Score</div>
+                    <div id="score" class="field">0</div>
+                  </div>
+                  <div class="flex">
+                    <div class="field">Question</div>
+                    <div id="question" class="field"></div>
+                  </div>
+                  <div class="flex">
+                    <div class="field">Answer A</div>
+                    <button2 id="answerA" onclick="answerA_clicked()"></button2>
+                  </div>
+                  <div class="flex">
+                    <div class="field">Answer B</div>
+                    <button2 id="answerB" onclick="answerB_clicked()"></button2>
+                  </div>
+                  <div class="flex">
+                    <div class="field">Answer C</div>
+                    <button2 id="answerC" onclick="answerC_clicked()"></button2>
+                  </div>
+            </div>
+        
+
         <div class="center-div">
             <button data-type="end">Quit</button>
         </div>

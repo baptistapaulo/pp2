@@ -18,13 +18,46 @@ function doSomething() {
 
 //variables
 var quiz = [];
-quiz[0] = new Question("What is 1/4 of 100?", "25", "24", "23");
-quiz[1] = new Question("What color is blood?", "Red", "White", "Green");
-quiz[2] = new Question("What color is grass?", "Green", "White", "Red");
-quiz[3] = new Question("How many legs does a spider have?", "8", "6", "4");
-quiz[4] = new Question("Who is the king of the Netherlands?", "Willem-Alexander", "Willem-Alexzelf", "Willem-Alexniemand");
-quiz[5] = new Question("What is 2-2?", "0", "2", "4");
-quiz[6] = new Question("What was Vincent van Gogh?", "Artist", "Baker", "Jobless");
+quiz[0] = new Question("Gone with the wind", "Scarlet O'Hara", "test", "test");
+quiz[1] = new Question("Star Wars", "Ioda", "test", "test");
+quiz[2] = new Question("Star Treck", "Spock", "test", "test");
+quiz[3] = new Question("Matrix", "Neo", "test", "test");
+quiz[4] = new Question("Friday Thirteen", "Jason", "test", "test");
+quiz[5] = new Question("Zombieland", "Woody Harrison", "test", "test");
+quiz[6] = new Question("Ferrie Bueller's", "Mathew Brotherck", "test", "test");
+quiz[7] = new Question("Taken", "Lian Nielsen", "test", "test");
+quiz[8] = new Question("Halloween", "Janie Lee Curtis", "test", "test");
+quiz[9] = new Question("Indiana Jones", "Harrison Ford", "test", "test");
+quiz[10] = new Question("Always on my mind", "Elvis Presley", "test", "test");
+quiz[11] = new Question("I always love you", "Whitney Houston", "test", "test");
+quiz[12] = new Question("Sign of the times", "Harry style", "test", "test");
+quiz[13] = new Question("Bad Guy", "Billie Eilish", "test", "test");
+quiz[14] = new Question("Nessum Dorma", "Luciano Pavaroti", "test", "test");
+quiz[15] = new Question("Anna", "Beatles", "test", "test");
+quiz[16] = new Question("Sorrow", "David Bowie", "test", "test");
+quiz[17] = new Question("Wake Up", "Arcade Fire", "test", "test");
+quiz[18] = new Question("Stormy Weather", "Etta James", "test", "test");
+quiz[19] = new Question("Watch under the bridge", "Adele", "test", "test");
+quiz[20] = new Question("Gone with the wind", "1942", "1943", "1945");
+quiz[21] = new Question("Star Wars", "1977", "1976", "1978");
+quiz[22] = new Question("Star Treck", "1966", "1967", "1965");
+quiz[23] = new Question("Matrix", "1999", "2001", "2000");
+quiz[24] = new Question("Friday Thirteen", "1980", "1981", "1985");
+quiz[25] = new Question("Zombieland", "2009", "2005", "2011");
+quiz[26] = new Question("Ferrie Bueller's", "1986", "1981", "1987");
+quiz[27] = new Question("Taken", "2008", "2007", "2005");
+quiz[28] = new Question("Halloween", "1978", "1977", "1980");
+quiz[29] = new Question("Indiana Jones", "1981", "1985", "1982");
+quiz[30] = new Question("Always on my mind", "1973", "1974", "1977");
+quiz[31] = new Question("I always love you", "1974", "1971", "1975");
+quiz[32] = new Question("Sign of the times", "1987", "1997", "1991");
+quiz[33] = new Question("Bad Guy", "2019", "2009", "2015");
+quiz[34] = new Question("Nessum Dorma", "1986", "1985", "1989");
+quiz[35] = new Question("Anna", "1963", "1973", "1971");
+quiz[36] = new Question("Sorrow", "1973", "1971", "1963");
+quiz[37] = new Question("Wake Up", "2005", "2004", "2000");
+quiz[38] = new Question("Stormy Weather", "1960", "1933", "1963");
+quiz[39] = new Question("Watch under the bridge", "2015", "2017", "2005");
 var randomQuestion;
 var answers = [];
 var currentScore = 0;
@@ -73,17 +106,16 @@ function answerB_clicked() {
 }
 function answerC_clicked() {
   var answerC = document.getElementById("answerC").value;
-  	
-		checkAnswer(answerC);
+  	checkAnswer(answerC);
 }
 
 function adjustScore(isCorrect) {
   debugger;
   if (isCorrect) {
-    currentScore++;
+    currentScore=currentScore+20;
   } else {
     if (currentScore > 0) {
-      currentScore--;
+      currentScore=currentScore+10;
   	}
   }
   document.getElementById("score").innerHTML = currentScore;
@@ -94,7 +126,7 @@ function checkAnswer(answer) {
     adjustScore(true);
     btnProvideQuestion();
   } else { 
-    alert("Wrong Answer!");
+    alert("Loser!");
     adjustScore(false);
   }	  
 }
