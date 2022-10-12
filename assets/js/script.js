@@ -140,9 +140,3 @@ function imageScore() {
       timeLeft--;
   }
 }
-
-if (currentScore < 70) {
-  document.getElementById("image-score").setAttribute("src","./assets/images/gameover.png");
-} else {
-  document.getElementById("image-score").setAttribute("src","./assets/images/winner.png");
-}

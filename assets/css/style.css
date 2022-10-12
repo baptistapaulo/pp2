@@ -1,4 +1,4 @@
-/* Default styles for media screen below 1400px */
+/* Default styles for media screen above 1400px */
 
 /* html tag used to define font and background for webpage */ 
 html {
@@ -118,7 +118,7 @@ button2:hover {
     color: black;
   }
 
-/* Styles for media scren above 1400px */
+/* Styles for media scren below 480px */
 @media screen and (min-width: 1400px) {
 /* center-div class use to define text aling and padding size for some divs */
 .center-div {
