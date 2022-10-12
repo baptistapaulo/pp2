@@ -99,21 +99,24 @@ footer {
 }
 
 button2 {
-    height: 40px;
-    width: 200px;
-    padding: 16px;
-    padding-left: 50px;
-    padding-right: 50px;
+
+    padding-left: 200px;
+    padding-right: 200px;
     border-radius: 10px;
-    margin: 10px;
+
   background: white;
   color: black;
 }
 
 button2:active {
-  background: black;
-  color: white;
+  background: yellow;
+  color: black;
 }
+
+button2:hover {
+    background: yellow;
+    color: black;
+  }
 
 /* Styles for media scren above 1400px */
 @media screen and (min-width: 1400px) {

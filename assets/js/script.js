@@ -7,8 +7,11 @@ function countdown() {
     if (timeLeft == -1) {
         clearTimeout(timerId);
         doSomething();
+
     } else {
-        time.innerHTML = timeLeft + ' seconds';
+        if (timeLeft < 10) {
+        time.innerHTML = '00:0' + timeLeft + ' seconds';
+        } else {time.innerHTML = '00: ' + timeLeft + ' seconds'}
         timeLeft--;
     }
 }
@@ -63,7 +66,7 @@ var answers = [];
 var currentScore = 0;
 
 document.addEventListener("DOMContentLoaded", function(event) { 
-  btnProvideQuestion();
+provideQuestion();
 });
 
 function Question(question,rightAnswer,wrongAnswer1,wrongAnswer2) {
@@ -73,12 +76,12 @@ function Question(question,rightAnswer,wrongAnswer1,wrongAnswer2) {
     this.wrongAnswer2 = wrongAnswer2;
 };
 
-function shuffle(o) {
-	for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-	return o;
+function shuffle(array) {
+	for(var x, y, z = array.length; z; x = parseInt(Math.random() * z), y = array[--z], array[z] = array[x], array[x] = y);
+	return array;
 };
 
-function btnProvideQuestion() { 
+function provideQuestion() { 
   
 	var randomNumber = Math.floor(Math.random()*quiz.length);
 	randomQuestion = quiz[randomNumber];
@@ -109,7 +112,6 @@ function answerC_clicked() {
 }
 
 function adjustScore(isCorrect) {
-  debugger;
   if (isCorrect) {
     currentScore=currentScore+20;
   } else {
@@ -123,10 +125,24 @@ function adjustScore(isCorrect) {
 function checkAnswer(answer) {  
   if (answer == randomQuestion.rightAnswer) {
     adjustScore(true);
-    btnProvideQuestion();
+    provideQuestion();
   } else { 
-    alert("Loser!");
+    alert("Wrong Answer!");
     adjustScore(false);
   }	  
 }
 
+function imageScore() {
+  if (timeLeft == -1) {
+      clearTimeout(timerId);
+  } else {
+      time.innerHTML = timeLeft + ' seconds';
+      timeLeft--;
+  }
+}
+
+if (currentScore < 70) {
+  document.getElementById("image-score").setAttribute("src","./assets/images/gameover.png");
+} else {
+  document.getElementById("image-score").setAttribute("src","./assets/images/winner.png");
+}
