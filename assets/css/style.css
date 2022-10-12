@@ -92,21 +92,9 @@ footer {
     background-color: purple;
 }
 
-.parent {
-    padding: 1rem 1rem;
-    text-align: center;
-  }
-  .child {
-    display: inline-block;
-    padding: 1rem 1rem;
-    vertical-align: middle;
-  }
-
-.flex { display:flex;}
-
 .field {
-  min-width: 200px;
-  min-height: 30px;
+  width: 200px;
+  height: 30px;
   margin: 10px;
 }
 

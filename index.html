@@ -49,7 +49,12 @@
             </ul>
         </div>
         <div class="center-div">
-            <button data-type="submit" type="submit">Begin</button>
+            <button id="submit">Begin</button>
+            <script type="text/javascript">
+                document.getElementById("submit").onclick = function () {
+                    location.href = "./quiz.html";
+                };
+            </script>
         </div>
     </main>
     <footer>

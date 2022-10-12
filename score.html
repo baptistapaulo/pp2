@@ -18,13 +18,14 @@
         <div class="center-div"> 
             <img class="box-image" id="image-score" src="./assets/images/gameover.PNG" alt="Quiz image for win or lost">
         </div>
-        <div class="flex, center-div">
-            <h2 class="field" id="score">Score</h2>
-            <h2 id="score" class="field">0</h2>
-        </div>
         <div class="center-div">
             <a href="./index.html" class="button"> Home </a>
-            <button data-type="restart">Repeat</button>
+            <button id="restart">Repeat</button>
+            <script type="text/javascript">
+                document.getElementById("restart").onclick = function () {
+                    location.href = "./quiz.html";
+                };
+            </script>
         </div>
     </main>
     <footer>
