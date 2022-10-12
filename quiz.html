@@ -16,43 +16,40 @@
     </header>
     <main>
         <div class="center-div">
-            <h2 id="timer"></h2>
+            <h2 id="timer">Timer:</h2>
+        </div>
+        <div class="center-div">
+                <h2><span>Score:</span> <span id="score" class="field">0</span></h2>
         </div>
             <div class="center-div">
-                <h2><span>Score:</span> <span id="score" class="field">0</span></h2>
-            </div>
-                  <div class="center-div">
                     <span>Question:</span> <span id="question" class="field"></span>
-                  </div>
-                  <div class="center-div">
+            </div>
+            <div class="center-div">
 
                     <button2 id="answerA" onclick="answerA_clicked()"></button2>
-                  </div>
-                  <div class="center-div">
+            </div>
+            <div class="center-div">
 
                     <button2 id="answerB" onclick="answerB_clicked()"></button2>
-                  </div>
-                  <div class="center-div">
+            </div>
+            <div class="center-div">
 
                     <button2 id="answerC" onclick="answerC_clicked()"></button2>
-                </div>
-            </div>
         </div>
-
         <div class="center-div">
             <button id="end">Quit</button>
-            <script type="text/javascript">
-                document.getElementById("end").onclick = function () {
-                    location.href = "./score.html";
-                };
-            </script>
+                <script>
+                    document.getElementById("end").onclick = function () {
+                        location.href = "./score.html";
+                    };
+                </script>
         </div>
     </main>
     <footer>
-        <a href="https://facebook.com" class="footer-icon" target="_blank" rel="noopener" alt="Facebook icon"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com" class="footer-icon" target="_blank" rel="noopener" alt="Twitter icon"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://youtube.com" class="footer-icon" target="_blank" rel="noopener" alt="YouTube icon"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://instagram.com" class="footer-icon" target="_blank" rel="noopener" alt="Instagram icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" class="footer-icon" target="_blank" rel="noopener" ><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" class="footer-icon" target="_blank" rel="noopener" ><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://youtube.com" class="footer-icon" target="_blank" rel="noopener" ><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://instagram.com" class="footer-icon" target="_blank" rel="noopener" ><i class="fab fa-instagram"></i></a>
         <p>
             <small>&copy; 2022 by Paulo Baptista</small>
         </p>

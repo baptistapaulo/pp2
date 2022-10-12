@@ -11,7 +11,7 @@ function countdown() {
     } else {
         if (timeLeft < 10) {
         time.innerHTML = '00:0' + timeLeft + ' seconds';
-        } else {time.innerHTML = '00: ' + timeLeft + ' seconds'}
+        } else {time.innerHTML = '00: ' + timeLeft + ' seconds';}
         timeLeft--;
     }
 }
