@@ -24,7 +24,9 @@
     * [Test Results](#Test-Results)
         * [Validators](#Validators)
         * [Lighthouse](#Lighthouse)
-        * [Devices](#Devices)
+        * [W3 Validator](#W3-Validator)
+        * [CSS Validator](#CSS-Validator)
+        * [JShint](#JShint)
     * [Testing Issues](#Testing-Issues)
 * [Deployment](#Deployment)
     * [Project Creation](#Project-Creation)
@@ -35,7 +37,6 @@
     * [Content](#Content)
     * [Media](#Media)
     * [Acknowledgements](#Acknowledgements)
-* [Comments](#Comments)
 
 ## Purpose
 The idea behind this site is to allow players to to validate their knowledge on movies or songs. The pool of questions is limited but can be incremented in future releases and the rules may change to increase complexity.
@@ -72,9 +73,11 @@ This website has a few limitations as some errors were found while deploying Jav
     * GitPod (IDE used to code the website)
     * Git (for version control, commits and push to GitHub)
     * Google Chrome Developer Tools (for checking compatibility, troubleshooting and editing code)
-    * TinyPNG (for compression of your WEBP, JPEG and PNG files) [here](https://tinypng.com/).
+    * TinyPNG (for compression of your WEBP, JPEG and PNG files) [here](https://tinypng.com/)
+    * Favicon (used to create favicon) [here](https://www.favicon.io/)
     * Stackoverflow (for searching on some topics related to HTML/CSS)
     * W3schools (for HTML/CSS tutorials)
+    * Lucidchart (used to create flowchart for JS) [here](https://www.lucidchart.com/)
 
 [Table-of-Contents](#Table-of-Contents)
 
@@ -82,7 +85,8 @@ This website has a few limitations as some errors were found while deploying Jav
 The UX was deployed and tested for different screen sizes.
 
 ### Structure
-![Structure]()
+![Structure](./assets/images/flowchart.PNG)
+
 [Table-of-Contents](#Table-of-Contents)
 
 ### Business-Goals
@@ -105,7 +109,7 @@ The UX was deployed and tested for different screen sizes.
 * Predominant colours across all site are red (gradient) and yellow.
 * Black and white ocasionaly.
 #### Typography
-**Times New Roman** (Times, serif) was used in all sections, including the menu and form.
+**Times New Roman** (Times, serif) was used in all sections.
 #### Wireframes
 ![wireframe-home](/assets/images/balsamiq_index.PNG)
 ![wireframe-quiz](/assets/images/balsamiq_quiz.PNG)
@@ -118,7 +122,6 @@ This website has a few limitations as some errors were found while deploying Jav
 - pool of questions should be limited to 5 and finish the quiz but this is only working with the timer
 - each question should be limited to 30 seconds but at this moment that is for the whole pool of questions
 - the pool of questions is not yet deployed with JSON
-![limitations]()
 
 [Table-of-Contents](#Table-of-Contents)
 
@@ -132,11 +135,22 @@ This website has a few limitations as some errors were found while deploying Jav
 * Lighthouse – Developer Tools
 * Chrome – Developer Tools
 * Am I Responsive [here](https://ui.dev/amiresponsive).
-![responsive]()
+![responsive](/assets/images/amIresponsive.PNG)
+
 #### Lighthouse
 ![lighthouse-index-results-performance](/assets/images/lighthouse1.PNG)
 ![lighthouse-quiz-results-performance](/assets/images/lighthouse2.PNG)
-![lighthouse-score-results-performance]()
+#### W3 Validator
+No errors found (only warnings in the quiz page).
+![index](/assets/images/index_page_w3_checker.png)
+![quiz](/assets/images/quiz_page_w3_checker.png)
+![score](/assets/images/score_page_w3_checker.png)
+#### CSS Validator
+No errors found.
+![lighthouse-index-results-performance](/assets/images/css_validator.png)
+#### JShint
+No errors found.
+![lighthouse-index-results-performance](/assets/images/jshint.PNG)
 
 #### Devices
 Tested functionality and responsiveness using the below devices and browsers.
@@ -213,10 +227,5 @@ So a fork is a copy of a repository. Forking a repository allows you to freely e
 ### Acknowledgements
 * Huge thank you to my mentor **Ronan McClelland** for his guidance throughout my project.
 * Some inspiration was found on this site [here](https://github.com/michaelrfreitas/p2_web_curiosity-quiz) so credits to its Author.
-
-[Table-of-Contents](#Table-of-Contents)
-
-## Comments
-*<empty>
 
 [Table-of-Contents](#Table-of-Contents)
