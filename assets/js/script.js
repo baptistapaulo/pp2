@@ -1,4 +1,8 @@
-// function countdown to set timer for each question and show an alert when timeouts
+/* function countdown to set timer for each question and show an alert when timeouts
+Credits to stackoverflow for the code reference below 
+https://stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward
+*/
+
 var timeLeft = 30;
 var time = document.getElementById('timer');
 var timerId = setInterval(countdown, 1000);
@@ -19,7 +23,11 @@ function doSomething() {
     alert("Reached out of time!");
 }
 
-//quiz variables and array
+/*quiz variables and array
+Credits to stackoverflow for the code reference below 
+https://stackoverflow.com/questions/51574884/uncaught-typeerror-cannot-read-property-rightanswer-of-undefined
+*/
+
 var quiz = [];
 quiz[0] = new Question("Who was the main actor in 'Gone with the wind'?", "Scarlet O'Hara","Robert Preston", "Frank Sinatra");
 quiz[1] = new Question("Who was the main actor in 'Star Wars'", "Ioda", "Orson Welles", "Robert Redford");
@@ -65,7 +73,10 @@ var randomQuestion;
 var answers = [];
 var currentScore = 0;
 
-//quiz main engine (DOM and functions)
+/* quiz main engine (DOM and functions)
+Credits to stackoverflow for the code reference below 
+https://stackoverflow.com/questions/51574884/uncaught-typeerror-cannot-read-property-rightanswer-of-undefined
+*/
 document.addEventListener("DOMContentLoaded", function(event) { 
 provideQuestion();
 });
