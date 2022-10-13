@@ -114,7 +114,7 @@ button2:hover {
 }
 
 /* Styles for media scren above 480px and below 1200px*/
-@media screen and (min-width: 480px max-width: 1200px) {
+@media screen and (max-width: 1200px) {
 /* center-div class use to define text aling and padding size for some divs */
 button, a.button {
     padding: 12px;
@@ -134,7 +134,7 @@ button2 {
 }
 
 /* Styles for media scren above 480px and below 480px*/
-@media screen and (min-width: 0px max-width: 480px) {
+@media screen and (max-width: 480px) {
     /* center-div class use to define text aling and padding size for some divs */
     button, a.button {
         padding: 8px;
@@ -151,10 +151,6 @@ button2 {
         border-radius: 6px;
         background: white;
         color: black;
-    }
-
-    #text-rules {
-        font-size: small;
     }
 
     #logo-icon {
