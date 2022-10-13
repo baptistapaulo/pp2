@@ -147,10 +147,10 @@ No errors found (only warnings in the quiz page).
 ![score](/assets/images/score_page_w3_checker.png)
 #### CSS Validator
 No errors found.
-![lighthouse-index-results-performance](/assets/images/css_validator.png)
+![css-results-performance](/assets/images/css_validator.png)
 #### JShint
 No errors found.
-![lighthouse-index-results-performance](/assets/images/jshint.PNG)
+![jshint-results-performance](/assets/images/jshint.PNG)
 
 #### Devices
 Tested functionality and responsiveness using the below devices and browsers.
