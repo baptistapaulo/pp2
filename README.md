@@ -3,7 +3,7 @@
 * [Purpose](#Purpose)
 * [Features](#Features)
     * [Existing](#Existing)
-        * [Main](#Main-Page)
+        * [Home](#Home)
         * [Quiz](#Quiz)
         * [Score](#Score)
     * [Left to Implement](#Left-to-Implement)
@@ -47,8 +47,8 @@ The live website can be found [here](https://baptistapaulo.github.io/pp2/).
 
 ## Features
 ### Existing
-#### Main-Section
-![Main-Page](/assets/images/index.PNG)
+#### Home
+![Home](/assets/images/index.PNG)
 #### Quiz
 ![Quiz](/assets/images/quiz.PNG)
 #### Score
