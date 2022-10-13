@@ -138,8 +138,11 @@ This website has a few limitations as some errors were found while deploying Jav
 ![responsive](/assets/images/amIresponsive.PNG)
 
 #### Lighthouse
+Desktop
 ![lighthouse-index-results-performance](/assets/images/lighthouse1.PNG)
 ![lighthouse-quiz-results-performance](/assets/images/lighthouse2.PNG)
+Mobile
+![lighthouse-mobile-index-results-performance](/assets/images/lighthouse_mobile.PNG)
 #### W3 Validator
 No errors found (only warnings in the quiz page).
 ![index](/assets/images/index_page_w3_checker.png)
