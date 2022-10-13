@@ -1,4 +1,4 @@
-/* Function countdown to set time for each question and show an alert when timepouts */
+// function countdown to set timer for each question and show an alert when timeouts
 var timeLeft = 30;
 var time = document.getElementById('timer');
 var timerId = setInterval(countdown, 1000);
@@ -19,7 +19,7 @@ function doSomething() {
     alert("Reached out of time!");
 }
 
-//variables
+//quiz variables and array
 var quiz = [];
 quiz[0] = new Question("Who was the main actor in 'Gone with the wind'?", "Scarlet O'Hara","Robert Preston", "Frank Sinatra");
 quiz[1] = new Question("Who was the main actor in 'Star Wars'", "Ioda", "Orson Welles", "Robert Redford");
@@ -65,6 +65,7 @@ var randomQuestion;
 var answers = [];
 var currentScore = 0;
 
+//quiz main engine (DOM and functions)
 document.addEventListener("DOMContentLoaded", function(event) { 
 provideQuestion();
 });
@@ -132,11 +133,9 @@ function checkAnswer(answer) {
   }	  
 }
 
-function imageScore() {
-  if (timeLeft == -1) {
-      clearTimeout(timerId);
-  } else {
-      time.innerHTML = timeLeft + ' seconds';
-      timeLeft--;
-  }
+//conditional image for score page (winner|loser)
+if (currentScore < 70) {
+  document.getElementById("image-score").src = "./assets/images/gameover.png";
+} else {
+  document.getElementById("image-score").src = "./assets/images/winner.png";
 }

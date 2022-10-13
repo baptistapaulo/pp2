@@ -41,7 +41,7 @@ h1 h2 a {
     font-size: large;
 }
 
-/* button tag used to define style of buttons in all pages such as the color, size and others */
+/* button tag used to define style of buttons (navigation) in all pages such as the color, size and other styling */
 button, a.button {
     padding: 16px;
     padding-left: 50px;
@@ -78,6 +78,7 @@ footer {
     padding: 1em;
 }
 
+/* box-image class used to define size, padding and other styling for images */
 .box-image {
     width: 20vw;
     height: 12vw;
@@ -87,25 +88,20 @@ footer {
     margin-bottom: 0;
 }
 
+/* box-image class used to define size, padding and other styling for images */
 .box-text {
     border-radius: 10px;
     background-color: purple;
 }
 
-.field {
-  width: 200px;
-  height: 30px;
-  margin: 10px;
-}
-
+/* button2 used to define size, padding and other styling for the quiz answers selection (not the navigation buttons) */
 button2 {
 
     padding-left: 200px;
     padding-right: 200px;
     border-radius: 10px;
-
-  background: white;
-  color: black;
+    background: white;
+    color: black;
 }
 
 button2:active {
