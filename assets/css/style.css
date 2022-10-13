@@ -37,6 +37,8 @@ h1 h2 a {
 #text-rules {
     text-align: justify;
     padding: 1em;
+    padding-left: 300px;
+    padding-right: 300px;
     justify-content: center;
     font-size: large;
 }
@@ -129,8 +131,6 @@ button2 {
     padding-left: 150px;
     padding-right: 150px;
     border-radius: 8px;
-    background: white;
-    color: black;
 }
 
 /* Styles for media scren above 480px and below 480px*/
@@ -149,8 +149,6 @@ button2 {
         padding-left: 100px;
         padding-right: 100px;
         border-radius: 6px;
-        background: white;
-        color: black;
     }
 
     #logo-icon {
