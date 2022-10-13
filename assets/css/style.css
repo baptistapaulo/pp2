@@ -133,6 +133,11 @@ button2 {
     border-radius: 8px;
 }
 
+#text-rules {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
 /* Styles for media scren above 480px and below 480px*/
 @media screen and (max-width: 480px) {
     /* center-div class use to define text aling and padding size for some divs */
@@ -153,4 +158,10 @@ button2 {
 
     #logo-icon {
         width: 20%;
+    }
+
+    #text-rules {
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: small;
     }
