@@ -40,7 +40,6 @@ h2 a {
     padding-left: 300px;
     padding-right: 300px;
     justify-content: center;
-    font-size: large;
 }
 
 /* button tag used to define style of buttons (navigation) in all pages such as the color, size and other styling */
@@ -64,6 +63,16 @@ button, a.button {
 footer {
     padding: 1em;
     text-align: center;
+}
+
+.foorter-box{
+    width: 540px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
 }
 
 /* footer-icon class used to define style for social media icons in the footer */
