@@ -1,35 +1,10 @@
-/* function countdown to set timer for each question and show an alert when timeouts
-Credits to stackoverflow for the code reference below 
-https://stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward
-*/
-
-var timeLeft = 30;
-var time = document.getElementById('timer');
-var timerId = setInterval(countdown, 1000);
-
-function countdown() {
-    if (timeLeft == -1) {
-        clearTimeout(timerId);
-        doSomething();
-
-    } else {
-        if (timeLeft < 10) {
-        time.innerHTML = '00:0' + timeLeft + ' seconds';
-        } else {time.innerHTML = '00: ' + timeLeft + ' seconds';}
-        timeLeft--;
-    }
-}
-function doSomething() {
-    alert("Reached out of time!");
-}
-
 /*quiz variables and array
 Credits to stackoverflow for the code reference below 
 https://stackoverflow.com/questions/51574884/uncaught-typeerror-cannot-read-property-rightanswer-of-undefined
 */
 
 var quiz = [];
-quiz[0] = new Question("Who was the main actor in 'Gone with the wind'?", "Scarlet O'Hara","Robert Preston", "Frank Sinatra");
+quiz[0] = new Question("Who was the main actor in 'Gone with the wind'?", "Scarlet O'Hara", "Robert Preston", "Frank Sinatra");
 quiz[1] = new Question("Who was the main actor in 'Star Wars'", "Ioda", "Orson Welles", "Robert Redford");
 quiz[2] = new Question("Who was the main actor in 'Star Treck'", "Spock", "Woody Allen", "Tommy Lee Jones");
 quiz[3] = new Question("Who was the main actor in 'Matrix'", "Neo", "Paul Newman", "Bruce Lee");
@@ -72,76 +47,103 @@ quiz[39] = new Question("In which year was the song 'Watch under the bridge' rel
 var randomQuestion;
 var answers = [];
 var currentScore = 0;
+var timeLeft = 30;
+var time = document.getElementById('timer');
+var timerId = setInterval(countdown, 1000);
+
+/* function countdown to set timer for each question and show an alert when timeouts
+Credits to stackoverflow for the code reference below 
+https://stackoverflow.com/questions/4435776/simple-clock-that-counts-down-from-30-seconds-and-executes-a-function-afterward
+*/
+function countdown() {
+  if (timeLeft == -1) {
+    clearTimeout(timerId);
+    doSomething();
+
+  } else {
+    if (timeLeft < 10) {
+      time.innerHTML = '00:0' + timeLeft + ' seconds';
+    } else {
+      time.innerHTML = '00: ' + timeLeft + ' seconds';
+    }
+    timeLeft--;
+  }
+}
+
+function doSomething() {
+  alert("Reached out of time!");
+}
 
 /* quiz main engine (DOM and functions)
 Credits to stackoverflow for the code reference below 
 https://stackoverflow.com/questions/51574884/uncaught-typeerror-cannot-read-property-rightanswer-of-undefined
 */
-document.addEventListener("DOMContentLoaded", function(event) { 
-provideQuestion();
+document.addEventListener("DOMContentLoaded", function (event) {
+  provideQuestion();
 });
 
-function Question(question,rightAnswer,wrongAnswer1,wrongAnswer2) {
-    this.question = question;
-    this.rightAnswer = rightAnswer;
-    this.wrongAnswer1 = wrongAnswer1;
-    this.wrongAnswer2 = wrongAnswer2;
+function Question(question, rightAnswer, wrongAnswer1, wrongAnswer2) {
+  this.question = question;
+  this.rightAnswer = rightAnswer;
+  this.wrongAnswer1 = wrongAnswer1;
+  this.wrongAnswer2 = wrongAnswer2;
 };
 
 function shuffle(array) {
-	for(var x, y, z = array.length; z; x = parseInt(Math.random() * z), y = array[--z], array[z] = array[x], array[x] = y);
-	return array;
+  for (var x, y, z = array.length; z; x = parseInt(Math.random() * z), y = array[--z], array[z] = array[x], array[x] = y);
+  return array;
 };
 
-function provideQuestion() { 
-  
-	var randomNumber = Math.floor(Math.random()*quiz.length);
-	randomQuestion = quiz[randomNumber];
+function provideQuestion() {
+
+  var randomNumber = Math.floor(Math.random() * quiz.length);
+  randomQuestion = quiz[randomNumber];
   answers = [randomQuestion.rightAnswer, randomQuestion.wrongAnswer1, randomQuestion.wrongAnswer2];
   shuffle(answers);
-  
-  document.getElementById("question").innerHTML= randomQuestion.question;
-  document.getElementById("answerA").value= answers[0];
-  document.getElementById("answerA").innerHTML= answers[0];
-  document.getElementById("answerB").value= answers[1];
-  document.getElementById("answerB").innerHTML= answers[1];
-  document.getElementById("answerC").value= answers[2];
-  document.getElementById("answerC").innerHTML= answers[2];
+
+  document.getElementById("question").innerHTML = randomQuestion.question;
+  document.getElementById("answerA").value = answers[0];
+  document.getElementById("answerA").innerHTML = answers[0];
+  document.getElementById("answerB").value = answers[1];
+  document.getElementById("answerB").innerHTML = answers[1];
+  document.getElementById("answerC").value = answers[2];
+  document.getElementById("answerC").innerHTML = answers[2];
 }
 
 function answerA_clicked() {
   var answerA = document.getElementById("answerA").value;
-  	checkAnswer(answerA);
+  checkAnswer(answerA);
 }
 
 function answerB_clicked() {
-		var answerB = document.getElementById("answerB").value;
+  var answerB = document.getElementById("answerB").value;
   checkAnswer(answerB);
 }
+
 function answerC_clicked() {
   var answerC = document.getElementById("answerC").value;
-  	checkAnswer(answerC);
+  checkAnswer(answerC);
 }
 
 function adjustScore(isCorrect) {
   if (isCorrect) {
-    currentScore=currentScore+20;
+    currentScore = currentScore + 20;
   } else {
     if (currentScore > 0) {
-      currentScore=currentScore+10;
-  	}
+      currentScore = currentScore + 10;
+    }
   }
   document.getElementById("score").innerHTML = currentScore;
 }
 
-function checkAnswer(answer) {  
+function checkAnswer(answer) {
   if (answer == randomQuestion.rightAnswer) {
     adjustScore(true);
     provideQuestion();
-  } else { 
+  } else {
     alert("Wrong Answer!");
     adjustScore(false);
-  }	  
+  }
 }
 
 //conditional image for score page (winner|loser)
