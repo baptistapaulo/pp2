@@ -1,73 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a simple quiz to assess knowledge about artists and their movies or songs">
-    <meta name="keywords" content="quiz, movies, artists, songs">
-    <meta name="author" content="Paulo Baptista">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a simple quiz to assess knowledge about artists and their movies or songs"
+    />
+    <meta name="keywords" content="quiz, movies, artists, songs" />
+    <meta name="author" content="Paulo Baptista" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Art Roulette</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
-    <script src="https://kit.fontawesome.com/10e1a27b71.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/10e1a27b71.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <img id="logo-icon" src="./assets/images/android-chrome-512x512.png" alt="Artists Quiz Logo">
+      <img
+        id="logo-icon"
+        src="./assets/images/android-chrome-512x512.png"
+        alt="Artists Quiz Logo"
+      />
     </header>
     <main>
-        <div id="text-rules">
-            <p>
-                This game presents a pool of 5 questions and the player must achieve 70 points to win.
-            </p>
-        
-            <p>
-                Rules for the Quiz:
-            </p>
+      <div id="text-rules">
+        <p>
+          This game presents a pool of 5 questions and the player must achieve
+          70 points to win.
+        </p>
 
-            <ul>
-                <li>
-                    Player has 30 seconds to answer each question
-                </li>
-                <li>
-                    Each question has 3 choices and ONLY one is the right answer
-                </li>
-                <li>
-                    Each correct answer scores 20 points
-                </li>
-                <li>
-                    If the player fails the answer then score is increased in 10 points
-                </li>
-                <li>
-                    If the player timeouts the answer then it scores null
-                </li>
-                 <li>
-                    Each question can be related to movies or songs and the answers may be the year or artist name
-                </li>
-                <li>
-                    If the player answers correctly two consecutive questions of same type (movie or song) then next question will be of different type
-                </li>
-            </ul>
-        </div>
-        <div class="center-div">
-            <button id="submit">Begin</button>
-                <script>
-                    document.getElementById("submit").onclick = function () {
-                        location.href = "./quiz.html";
-                    };
-                </script>
-        </div>
+        <p>Rules for the Quiz:</p>
+
+        <ul>
+          <li>Player has 30 seconds to answer each question</li>
+          <li>Each question has 3 choices and ONLY one is the right answer</li>
+          <li>Each correct answer scores 20 points</li>
+          <li>
+            If the player fails the answer then score is increased in 10 points
+          </li>
+          <li>If the player timeouts the answer then it scores null</li>
+          <li>
+            Each question can be related to movies or songs and the answers may
+            be the year or artist name
+          </li>
+          <li>
+            If the player answers correctly two consecutive questions of same
+            type (movie or song) then next question will be of different type
+          </li>
+        </ul>
+      </div>
+      <div class="center-div">
+        <button id="submit">Begin</button>
+        <script>
+          document.getElementById("submit").onclick = function () {
+            location.href = "./quiz.html";
+          };
+        </script>
+      </div>
     </main>
     <footer>
-        <a href="https://facebook.com" class="footer-icon" target="_blank" rel="noopener" ><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com" class="footer-icon" target="_blank" rel="noopener" ><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://youtube.com" class="footer-icon" target="_blank" rel="noopener" ><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://instagram.com" class="footer-icon" target="_blank" rel="noopener" ><i class="fab fa-instagram"></i></a>
-        <p>
-            <small>&copy; 2022 by Paulo Baptista</small>
-        </p>
+      <a
+        href="https://facebook.com"
+        class="footer-icon"
+        target="_blank"
+        rel="noopener"
+        ><i class="fab fa-facebook"></i
+      ></a>
+      <a
+        href="https://twitter.com"
+        class="footer-icon"
+        target="_blank"
+        rel="noopener"
+        ><i class="fa-brands fa-twitter"></i
+      ></a>
+      <a
+        href="https://youtube.com"
+        class="footer-icon"
+        target="_blank"
+        rel="noopener"
+        ><i class="fa-brands fa-youtube"></i
+      ></a>
+      <a
+        href="https://instagram.com"
+        class="footer-icon"
+        target="_blank"
+        rel="noopener"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <p>
+        <small>&copy; 2022 by Paulo Baptista</small>
+      </p>
     </footer>
     <!-- this is the link to javascript file with quiz variables and functions -->
     <script src="./assets/js/script.js"></script>
-</body>
+  </body>
 </html>
