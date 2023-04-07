@@ -54,7 +54,6 @@ button, a.button {
     color: white;
     font-weight: bold;
     text-decoration: none;
-    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     margin:2em;
 }
@@ -122,6 +121,20 @@ button2:active {
 button2:hover {
     background: yellow;
     color: black;
+}
+
+.options{
+    background: aliceblue;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Styles for media scren above 480px and below 1200px*/

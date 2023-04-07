@@ -1,92 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="This is a simple quiz to assess knowledge about artists and their movies or songs"
-    />
+    <meta name="description"
+        content="This is a simple quiz to assess knowledge about artists and their movies or songs" />
     <meta name="keywords" content="quiz, movies, artists, songs" />
     <meta name="author" content="Paulo Baptista" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Art Roulette</title>
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
-    <script
-      src="https://kit.fontawesome.com/10e1a27b71.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
+    <script src="https://kit.fontawesome.com/10e1a27b71.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
     <header>
-      <img
-        id="logo-icon"
-        src="./assets/images/android-chrome-512x512.png"
-        alt="Artists Quiz Logo"
-      />
+        <img id="logo-icon" src="./assets/images/android-chrome-512x512.png" alt="Artists Quiz Logo" />
     </header>
     <main>
-      <div class="center-div">
-        <h2 id="timer">Timer:</h2>
-      </div>
-      <div class="center-div">
-        <h2><span>Score:</span> <span id="score">0</span></h2>
-      </div>
-      <div class="center-div">
-        <span>Question:</span> <span id="question"></span>
-      </div>
-      <div class="center-div">
-        <button2 id="answerA" onclick="answerA_clicked()"></button2>
-      </div>
-      <div class="center-div">
-        <button2 id="answerB" onclick="answerB_clicked()"></button2>
-      </div>
-      <div class="center-div">
-        <button2 id="answerC" onclick="answerC_clicked()"></button2>
-      </div>
-      <div class="center-div">
-        <button id="end">Quit</button>
-        <script>
-          document.getElementById("end").onclick = function () {
-            location.href = "./score.html";
-          };
-        </script>
-      </div>
+        <div class="center-div">
+            <h2 id="timer">Timer:</h2>
+        </div>
+        <div class="center-div">
+            <h2><span>Score:</span> <span id="score">0</span></h2>
+        </div>
+        <div class="center-div">
+            <span>Question:</span> <span id="question"></span>
+        </div>
+        <div class="options">
+            <button2 id="answerA" onclick="answerA_clicked()"></button2>
+        </div>
+        <div class="options">
+            <button2 id="answerB" onclick="answerB_clicked()"></button2>
+        </div>
+        <div class="options">
+            <button2 id="answerC" onclick="answerC_clicked()"></button2>
+        </div>
+        <div class="center-div">
+            <button id="end">Quit</button>
+            <script>
+                document.getElementById("end").onclick = function () {
+                    location.href = "./score.html";
+                };
+            </script>
+        </div>
     </main>
     <footer>
-      <a
-        href="https://facebook.com"
-        class="footer-icon"
-        target="_blank"
-        rel="noopener"
-        ><i class="fab fa-facebook"></i
-      ></a>
-      <a
-        href="https://twitter.com"
-        class="footer-icon"
-        target="_blank"
-        rel="noopener"
-        ><i class="fa-brands fa-twitter"></i
-      ></a>
-      <a
-        href="https://youtube.com"
-        class="footer-icon"
-        target="_blank"
-        rel="noopener"
-        ><i class="fa-brands fa-youtube"></i
-      ></a>
-      <a
-        href="https://instagram.com"
-        class="footer-icon"
-        target="_blank"
-        rel="noopener"
-        ><i class="fab fa-instagram"></i
-      ></a>
-      <p>
-        <small>&copy; 2022 by Paulo Baptista</small>
-      </p>
+        <a href="https://facebook.com" class="footer-icon" target="_blank" rel="noopener"><i
+                class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" class="footer-icon" target="_blank" rel="noopener"><i
+                class="fa-brands fa-twitter"></i></a>
+        <a href="https://youtube.com" class="footer-icon" target="_blank" rel="noopener"><i
+                class="fa-brands fa-youtube"></i></a>
+        <a href="https://instagram.com" class="footer-icon" target="_blank" rel="noopener"><i
+                class="fab fa-instagram"></i></a>
+        <p>
+            <small>&copy; 2022 by Paulo Baptista</small>
+        </p>
     </footer>
     <!-- this is the link to javascript file with quiz variables and functions -->
     <script src="./assets/js/script.js"></script>
-  </body>
+</body>
+
 </html>

@@ -368,3 +368,17 @@ if (currentScore < 70) {
 } else {
   document.getElementById("image-score").src = "./assets/images/winner.png";
 }
+
+// Main function for quiz which should repeat 5 times the pool of questions and check answers
+function quiz() {
+  count = 0;
+  do {
+    provideQuestion();
+    checkAnswer(answer);
+  } while (count < 5);
+}
+
+// Event for when button Begin is clicked to start main function
+start-quiz.onclick = ()=>{
+    quiz();
+}
