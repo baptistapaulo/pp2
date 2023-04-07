@@ -1,4 +1,6 @@
-// Quiz variables
+// Quiz variables and array
+
+// Creating a var quiz to pass questions and answers
 var quiz = [];
 quiz[0] = new Question("Who was the main actor in 'Gone with the wind'?", "Scarlet O'Hara", "Robert Preston", "Frank Sinatra");
 quiz[1] = new Question("Who was the main actor in 'Star Wars'", "Ioda", "Orson Welles", "Robert Redford");
@@ -75,10 +77,12 @@ function countdown() {
   }
 }
 
+// function to send an alert when timer reaches the limit for a question
 function doSomething() {
   alert("Reached out of time!");
 }
 
+// function question and objects for questions and answeres
 function Question(question, rightAnswer, wrongAnswer1, wrongAnswer2) {
   this.question = question;
   this.rightAnswer = rightAnswer;
@@ -86,11 +90,13 @@ function Question(question, rightAnswer, wrongAnswer1, wrongAnswer2) {
   this.wrongAnswer2 = wrongAnswer2;
 };
 
+// function to shuffle random questions from the array
 function shuffle(array) {
   for (var x, y, z = array.length; z; x = parseInt(Math.random() * z), y = array[--z], array[z] = array[x], array[x] = y);
   return array;
 };
 
+// function to show question and answers for that selected question
 function provideQuestion() {
 
   var randomNumber = Math.floor(Math.random() * quiz.length);
@@ -107,21 +113,25 @@ function provideQuestion() {
   document.getElementById("answerC").innerHTML = answers[2];
 }
 
+// function to select answerA if buttion clicked
 function answerA_clicked() {
   var answerA = document.getElementById("answerA").value;
   checkAnswer(answerA);
 }
 
+// function to select answerB if buttion clicked
 function answerB_clicked() {
   var answerB = document.getElementById("answerB").value;
   checkAnswer(answerB);
 }
 
+// function to select answerC if buttion clicked
 function answerC_clicked() {
   var answerC = document.getElementById("answerC").value;
   checkAnswer(answerC);
 }
 
+// function to define score and increment or decrement if answer is right or wrong
 function adjustScore(isCorrect) {
   if (isCorrect) {
     currentScore = currentScore + 20;
@@ -133,6 +143,7 @@ function adjustScore(isCorrect) {
   document.getElementById("score").innerHTML = currentScore;
 }
 
+// function to validate answer and update score accordingly if answer right or wrong
 function checkAnswer(answer) {
   if (answer == randomQuestion.rightAnswer) {
     adjustScore(true);
@@ -143,7 +154,7 @@ function checkAnswer(answer) {
   }
 }
 
-//conditional image for score page (winner|loser)
+// conditional image for score page (winner|loser)
 if (currentScore < 70) {
   document.getElementById("image-score").src = "./assets/images/gameover.png";
 } else {
