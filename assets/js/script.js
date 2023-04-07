@@ -1,7 +1,13 @@
 // Quiz variables and array
+var randomQuestion;
+var answers = [];
+var currentScore = 0;
+var timeLeft = 30;
+var time = document.getElementById("timer");
+var timerId = setInterval(countdown, 1000);
 
-// Creating a var quiz to pass questions and answers
-var quiz = [];
+// Creating an array quiz to pass questions and answers
+let quiz = [];
 quiz[0] = new Question(
   "Who was the main actor in 'Gone with the wind'?",
   "Scarlet O'Hara",
@@ -241,12 +247,6 @@ quiz[39] = new Question(
   "2017",
   "2005"
 );
-var randomQuestion;
-var answers = [];
-var currentScore = 0;
-var timeLeft = 30;
-var time = document.getElementById("timer");
-var timerId = setInterval(countdown, 1000);
 
 // Quiz main engine (DOM and functions)
 
